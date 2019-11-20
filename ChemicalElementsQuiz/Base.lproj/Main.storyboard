@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ChemicalElementsQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="0CG-FC-xc2">
+                                <rect key="frame" x="51" y="33" width="273.5" height="601"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r8p-Qg-9DH">
+                                        <rect key="frame" x="86" y="0.0" width="101.5" height="41"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="     0 / 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G5r-zN-A7W">
+                                                <rect key="frame" x="0.0" y="0.0" width="71.5" height="41"/>
+                                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="24"/>
+                                                <color key="textColor" red="0.95355804" green="0.95355804" blue="0.95355804" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W9f-uO-DhJ">
+                                                <rect key="frame" x="71.5" y="0.0" width="30" height="41"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <state key="normal" title="↻">
+                                                    <color key="titleColor" red="0.9483863850704225" green="0.9483863850704225" blue="0.9483863850704225" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="startOverTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Fo-VS-pm5"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N3K-aL-qil">
+                                        <rect key="frame" x="36.5" y="63" width="200" height="200"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Au" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ncp-UC-wzv">
+                                                <rect key="frame" x="0.0" y="30" width="200" height="91"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="91" id="1VK-GG-q5w"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="N7i-gT-UjO"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="90"/>
+                                                <color key="textColor" red="0.952849911971831" green="0.952849911971831" blue="0.952849911971831" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="79" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dyH-eR-m6R">
+                                                <rect key="frame" x="0.0" y="125" width="200" height="45"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="Acs-XN-MZU"/>
+                                                    <constraint firstAttribute="height" constant="45" id="CoJ-IR-aC1"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="45"/>
+                                                <color key="textColor" red="0.94825594190140849" green="0.94825594190140849" blue="0.94825594190140849" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.95617847711267601" green="0.8024399768710303" blue="0.037497195180889231" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="Ep0-cz-ZIc"/>
+                                            <constraint firstAttribute="width" secondItem="N3K-aL-qil" secondAttribute="height" multiplier="1:1" id="Ib1-Kg-4bx"/>
+                                            <constraint firstAttribute="bottom" secondItem="dyH-eR-m6R" secondAttribute="bottom" constant="30" id="VNh-sb-qD3"/>
+                                            <constraint firstItem="dyH-eR-m6R" firstAttribute="centerX" secondItem="N3K-aL-qil" secondAttribute="centerX" id="hnQ-lF-zKa"/>
+                                            <constraint firstAttribute="height" constant="200" id="il6-C9-Xst"/>
+                                            <constraint firstItem="Ncp-UC-wzv" firstAttribute="top" secondItem="N3K-aL-qil" secondAttribute="top" constant="30" id="mmr-wf-VbT"/>
+                                            <constraint firstItem="Ncp-UC-wzv" firstAttribute="centerX" secondItem="N3K-aL-qil" secondAttribute="centerX" id="s1b-Zz-5Fk"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose the correct answer:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cQn-Ff-Df2">
+                                        <rect key="frame" x="0.0" y="285" width="273.5" height="28"/>
+                                        <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="24"/>
+                                        <color key="textColor" red="0.95355804002092315" green="0.95355804002092315" blue="0.95355804002092315" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UVB-yM-fRm">
+                                        <rect key="frame" x="36.5" y="335" width="200" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="8Or-Ay-0uR"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="P7p-M9-ZVr"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="21"/>
+                                        <state key="normal" title=" Rutherfordium ">
+                                            <color key="titleColor" red="0.95243394751408439" green="0.95243394751408439" blue="0.95243394751408439" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bKh-dx-xE2"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pme-TQ-inx">
+                                        <rect key="frame" x="36.5" y="407" width="200" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="OtN-wF-yLx"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="YuT-lN-Bgg"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="21"/>
+                                        <state key="normal" title=" Rutherfordium ">
+                                            <color key="titleColor" red="0.95243394751408439" green="0.95243394751408439" blue="0.95243394751408439" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gCr-zT-UmJ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fAb-0d-wk3">
+                                        <rect key="frame" x="36.5" y="479" width="200" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="uHX-Q8-rdY"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="x66-FT-Kwg"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="21"/>
+                                        <state key="normal" title=" Rutherfordium ">
+                                            <color key="titleColor" red="0.95243394751408439" green="0.95243394751408439" blue="0.95243394751408439" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6cS-cG-ZhV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oE9-Lx-IKL">
+                                        <rect key="frame" x="36.5" y="551" width="200" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="jn8-RW-u42"/>
+                                            <constraint firstAttribute="height" constant="50" id="odE-4v-CLy"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="21"/>
+                                        <state key="normal" title=" Rutherfordium ">
+                                            <color key="titleColor" red="0.95243394751408439" green="0.95243394751408439" blue="0.95243394751408439" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gpq-53-JD5"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.048308262565589566" green="0.048308262565589566" blue="0.048308262565589566" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="0CG-FC-xc2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="D93-is-waq"/>
+                            <constraint firstItem="0CG-FC-xc2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="E1P-IH-pb8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="atomicNumberLabel" destination="dyH-eR-m6R" id="q7p-gt-LEe"/>
+                        <outlet property="elementView" destination="N3K-aL-qil" id="ERb-7v-B3V"/>
+                        <outlet property="scoreLabel" destination="G5r-zN-A7W" id="qau-rA-MDJ"/>
+                        <outlet property="symbolLabel" destination="Ncp-UC-wzv" id="ZOh-wp-6Kl"/>
+                        <outletCollection property="buttons" destination="UVB-yM-fRm" collectionClass="NSMutableArray" id="aGp-0B-KlJ"/>
+                        <outletCollection property="buttons" destination="Pme-TQ-inx" collectionClass="NSMutableArray" id="YLS-HR-emm"/>
+                        <outletCollection property="buttons" destination="fAb-0d-wk3" collectionClass="NSMutableArray" id="t8Y-qI-VdQ"/>
+                        <outletCollection property="buttons" destination="oE9-Lx-IKL" collectionClass="NSMutableArray" id="W7V-hY-nY6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.40000000000001" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+</document>
